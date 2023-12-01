@@ -1,0 +1,2 @@
+echo "Verificando e instalando dependencias..."
+npm install

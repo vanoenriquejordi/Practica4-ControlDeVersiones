@@ -1,0 +1,10 @@
+#!/bin/sh
+#
+CHARACTERS="áéíóúàèìòùâêîôû"
+
+for FILE in $(git diff --cached --name-only); Do
+if grep -q [$CHARACTERS] "$FILE"; then
+echo "Error en el archivo"
+exit 1
+fi
+done
